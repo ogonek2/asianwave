@@ -28,10 +28,14 @@ Route::prefix('/')->group(function () {
     Route::get('lecture-schedule', [Navigator::class, 'index']);
 });
 
-Route::prefix('admin')->group(function () {
-    Route::get('/', [Admin::class, 'index']);
-    Route::resource('news', NewsAdmin::class);
-    Route::resource('schedule', ScheduleAdmin::class);
-    Route::resource('LectureSchedule', LectureScheduleAdmin::class);
-    Route::resource('Shops', ShopsAdmin::class);
+// Route::prefix('admin')->group(function () {
+//     Route::get('/', [Admin::class, 'index']);
+//     Route::resource('news', NewsAdmin::class);
+//     Route::resource('schedule', ScheduleAdmin::class);
+//     Route::resource('LectureSchedule', LectureScheduleAdmin::class);
+//     Route::resource('Shops', ShopsAdmin::class);
+// });
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
