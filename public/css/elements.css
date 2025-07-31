@@ -1,0 +1,71 @@
+@font-face {
+  font-family: russo_one;
+  src: url("/storage/fonts/RussoOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: jura;
+  src: url("/storage/fonts/Jura.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: mon;
+  src: url("/storage/fonts/MontserratAlternates-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --var-color-1: #FFFFFF;
+  --var-color-2: #000000;
+  --var-color-3: #E1335D;
+  --var-color-4: #110F15;
+  --var-color-5: #4E4564;
+  --var-color-6: #E33B9B;
+  --var-color-7: #2492E2;
+  --var-color-8: #3b2570;
+}
+
+.t-t-h {
+  font-family: russo_one;
+  text-transform: uppercase;
+}
+
+.page-tab-menu {
+  width: 100%;
+  padding: 20px 15px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page-tab-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-tab-menu ul li {
+  cursor: pointer;
+  border-bottom: 1px solid var(--var-color-3);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+.page-tab-menu ul li.active {
+  color: var(--var-color-3);
+}
+.page-tab-menu ul li.active::before {
+  content: ">";
+  font-size: 24px;
+}
+
+.empty-page {
+  text-align: center;
+}
+.empty-page p {
+  font-size: 24px;
+}
+.empty-page p a {
+  text-transform: uppercase;
+  color: var(--var-color-3);
+}

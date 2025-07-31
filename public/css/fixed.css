@@ -1,0 +1,51 @@
+@font-face {
+  font-family: russo_one;
+  src: url("/storage/fonts/RussoOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: jura;
+  src: url("/storage/fonts/Jura.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: mon;
+  src: url("/storage/fonts/MontserratAlternates-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --var-color-1: #FFFFFF;
+  --var-color-2: #000000;
+  --var-color-3: #E1335D;
+  --var-color-4: #110F15;
+  --var-color-5: #4E4564;
+  --var-color-6: #E33B9B;
+  --var-color-7: #2492E2;
+  --var-color-8: #3b2570;
+}
+
+.navigator {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
+  padding: 20px 15px;
+}
+.navigator ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navigator ul li {
+  font-size: 24px;
+  color: var(--var-color-1);
+}

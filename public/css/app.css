@@ -1,0 +1,97 @@
+@font-face {
+  font-family: russo_one;
+  src: url("/storage/fonts/RussoOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: jura;
+  src: url("/storage/fonts/Jura.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: mon;
+  src: url("/storage/fonts/MontserratAlternates-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --var-color-1: #FFFFFF;
+  --var-color-2: #000000;
+  --var-color-3: #E1335D;
+  --var-color-4: #110F15;
+  --var-color-5: #4E4564;
+  --var-color-6: #E33B9B;
+  --var-color-7: #2492E2;
+  --var-color-8: #3b2570;
+}
+
+html,
+body {
+  background-color: #1a152b;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--var-color-1);
+  transition: all 0.2s ease-in;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button,
+input {
+  background-color: unset;
+  border: unset;
+  outline: unset;
+}
+
+.skew-panel {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  background: rgba(238, 91, 172, 0.05);
+  z-index: 1;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+.skew-panel.left {
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
+}
+
+.skew-panel.right {
+  right: 0;
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
