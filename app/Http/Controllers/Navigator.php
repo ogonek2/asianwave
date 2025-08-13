@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\News;
 use App\Models\Schedule;
 use App\Models\LectureSchedule;
+use App\FormsParticipantsCategory;
 
 class Navigator extends Controller
 {
@@ -17,6 +18,7 @@ class Navigator extends Controller
                 'news' => News::latest()->take(5)->get(),
                 'Schedule' => Schedule::all(),
                 'LectureSchedule' => LectureSchedule::all(),
+                'FormsParticipantsCategory' => FormsParticipantsCategory::all(),
             ],
         ]);
     }

@@ -9,52 +9,17 @@
                     </p>
                 </div>
                 <div class="group-items">
-                    <div class="item">
-                        <div class="backdrop">
-                            <img src="/storage/source/form_items/vocaloid-devushka-muzyka-art.png" alt="">
-                        </div>
+                    <div class="item" v-for="(item, index) in forms" :key="item.id">
+                        <div class="backdrop"></div>
                         <div class="el-text">
-                            <h1>АНКЕТА ВОКАЛІСТА</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="backdrop">
-                            <img src="/storage/source/form_items/oshinoko_5 1.png" alt="">
-                        </div>
-                        <div class="el-text">
-                            <h1>АНКЕТА ТАНЦОРІВ</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="backdrop">
-                            <img src="/storage/source/form_items/b92ec318c467a42ec725fcf83a3c5038 1.png" alt="">
-                        </div>
-                        <div class="el-text">
-                            <h1>АНКЕТА косплеєрів</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="backdrop">
-                            <img src="/storage/source/form_items/vocaloid-devushka-muzyka-art.png" alt="">
-                        </div>
-                        <div class="el-text">
-                            <h1>АНКЕТА ВОКАЛІСТА</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="backdrop">
-                            <img src="/storage/source/form_items/oshinoko_5 1.png" alt="">
-                        </div>
-                        <div class="el-text">
-                            <h1>АНКЕТА ТАНЦОРІВ</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="backdrop">
-                            <img src="/storage/source/form_items/b92ec318c467a42ec725fcf83a3c5038 1.png" alt="">
-                        </div>
-                        <div class="el-text">
-                            <h1>АНКЕТА косплеєрів</h1>
+                            <h1 v-html="formatText(item.title)"></h1>
+                            <a :href="item.link" style="margin-top: 10px;" target="_blank">
+                                <button class="cyber-button-small bg-blue fg-white">
+                                    Перейти
+                                    <span class="glitchtext">Вперед</span>
+                                    <span class="tag fg-white">AW</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -64,9 +29,23 @@
     </section>
 </template>
 
-
 <script>
+import { computed } from 'vue'
+
 export default {
-    name: 'FormsGroup'
+    name: 'FormsGroup',
+    setup() {
+        const forms = computed(() => window.__APP_DATA__?.FormsParticipantsCategory || []);
+
+        const formatText = (text) => {
+            if (!text) return '';
+            return text.trim().replace(/\s+/g, '<br>');
+        };
+
+        return {
+            forms,
+            formatText
+        }
+    }
 }
 </script>

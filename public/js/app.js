@@ -5641,42 +5641,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 //
 //
 //
@@ -5709,8 +5674,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'FormsGroup'
+  name: 'FormsGroup',
+  setup: function setup() {
+    var forms = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
+      var _window$__APP_DATA__;
+      return ((_window$__APP_DATA__ = window.__APP_DATA__) === null || _window$__APP_DATA__ === void 0 ? void 0 : _window$__APP_DATA__.FormsParticipantsCategory) || [];
+    });
+    var formatText = function formatText(text) {
+      if (!text) return '';
+      return text.trim().replace(/\s+/g, '<br>');
+    };
+    return {
+      forms: forms,
+      formatText: formatText
+    };
+  }
 });
 
 /***/ }),
@@ -40358,130 +40338,81 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "section",
+    { staticClass: "FormsGroup pf cyber-razor-top bg-dark fg-white p-3" },
+    [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "content" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "group-items" },
+            _vm._l(_vm.forms, function (item, index) {
+              return _c("div", { key: item.id, staticClass: "item" }, [
+                _c("div", { staticClass: "backdrop" }),
+                _vm._v(" "),
+                _c("div", { staticClass: "el-text" }, [
+                  _c("h1", {
+                    domProps: { innerHTML: _vm._s(_vm.formatText(item.title)) },
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticStyle: { "margin-top": "10px" },
+                      attrs: { href: item.link, target: "_blank" },
+                    },
+                    [_vm._m(1, true)]
+                  ),
+                ]),
+              ])
+            }),
+            0
+          ),
+        ]),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "back_img",
+          attrs: {
+            src: "/storage/source/persone/Picsart_25-03-28_21-58-08-094.png",
+            alt: "",
+          },
+        }),
+      ]),
+    ]
+  )
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text" }, [
+      _c("h1", [_vm._v("Заявки на участь")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n                    Ви можете подати свою заявку на виступ тут:\n                "
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c(
-      "section",
-      { staticClass: "FormsGroup pf cyber-razor-top bg-dark fg-white p-3" },
+      "button",
+      { staticClass: "cyber-button-small bg-blue fg-white" },
       [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "content" }, [
-            _c("div", { staticClass: "text" }, [
-              _c("h1", [_vm._v("Заявки на участь")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                    Ви можете подати свою заявку на виступ тут:\n                "
-                ),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "group-items" }, [
-              _c("div", { staticClass: "item" }, [
-                _c("div", { staticClass: "backdrop" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/form_items/vocaloid-devushka-muzyka-art.png",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "el-text" }, [
-                  _c("h1", [_vm._v("АНКЕТА ВОКАЛІСТА")]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("div", { staticClass: "backdrop" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/form_items/oshinoko_5 1.png",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "el-text" }, [
-                  _c("h1", [_vm._v("АНКЕТА ТАНЦОРІВ")]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("div", { staticClass: "backdrop" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/form_items/b92ec318c467a42ec725fcf83a3c5038 1.png",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "el-text" }, [
-                  _c("h1", [_vm._v("АНКЕТА косплеєрів")]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("div", { staticClass: "backdrop" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/form_items/vocaloid-devushka-muzyka-art.png",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "el-text" }, [
-                  _c("h1", [_vm._v("АНКЕТА ВОКАЛІСТА")]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("div", { staticClass: "backdrop" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/form_items/oshinoko_5 1.png",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "el-text" }, [
-                  _c("h1", [_vm._v("АНКЕТА ТАНЦОРІВ")]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item" }, [
-                _c("div", { staticClass: "backdrop" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/form_items/b92ec318c467a42ec725fcf83a3c5038 1.png",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "el-text" }, [
-                  _c("h1", [_vm._v("АНКЕТА косплеєрів")]),
-                ]),
-              ]),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "back_img",
-            attrs: {
-              src: "/storage/source/persone/Picsart_25-03-28_21-58-08-094.png",
-              alt: "",
-            },
-          }),
-        ]),
+        _vm._v(
+          "\n                                Перейти\n                                "
+        ),
+        _c("span", { staticClass: "glitchtext" }, [_vm._v("Вперед")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "tag fg-white" }, [_vm._v("AW")]),
       ]
     )
   },

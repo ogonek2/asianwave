@@ -187,6 +187,7 @@
                 z-index: 2;
                 top: -100px;
                 right: 0;
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -239,16 +240,14 @@
                 padding: 50px 0 0;
 
                 .item {
-                    aspect-ratio: 1 / 1.2;
+                    aspect-ratio: 1 / 0.9;
                     position: relative;
                     width: 100%;
                     max-width: 600px;
                     border: 1px solid var(--var-color-1);
                     padding: 25px 15px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: end;
                     cursor: pointer;
+
                     .backdrop {
                         position: absolute;
                         left: 0;
@@ -256,6 +255,7 @@
                         z-index: 1;
                         width: 100%;
                         height: 100%;
+                        background-color: rgba(17, 15, 21, .5);
 
                         img {
                             width: 100%;
@@ -270,6 +270,14 @@
                         font-size: 16px;
                         color: var(--var-color-1);
                         width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        a {
+                            margin-left: auto;
+                        }
 
                         h1 {
                             text-transform: uppercase;
@@ -343,6 +351,7 @@
         .content {
             width: 100%;
             padding: 0 15px;
+
             .text {
                 h1 {
                     text-transform: uppercase;
@@ -449,6 +458,7 @@
                             justify-content: end;
                             background-color: rgba(17, 15, 21, .5);
                             padding: 25px 15px;
+
                             h1 {
                                 color: var(--var-color-3);
                                 overflow: auto;
@@ -760,6 +770,7 @@
         }
     }
 }
+
 .News {
     width: 100%;
     background: #291b49;
@@ -803,6 +814,7 @@
         position: relative;
         width: 100%;
         overflow: hidden;
+
         .content {
             width: 100%;
             padding: 0 15px;
