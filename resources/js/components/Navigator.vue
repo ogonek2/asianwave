@@ -1,6 +1,9 @@
 <template>
     <div id="header" class="header" style="padding: 0.5rem 0">
         <nav class="navigator" :class="{ open: isOpen }">
+            <div id="logo-name">
+                <a href="/"><h1>ASIAN WAVE</h1><small>- Твій фестиваль!</small></a>
+            </div>
             <div class="burger" @click="toggleMenu" style="padding: 0 2rem;">
                 <div></div>
                 <div></div>

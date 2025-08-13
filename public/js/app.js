@@ -5483,6 +5483,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Navigator',
@@ -5706,9 +5709,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
 //
 //
 //
@@ -39993,6 +39993,8 @@ var render = function () {
     },
     [
       _c("nav", { staticClass: "navigator", class: { open: _vm.isOpen } }, [
+        _vm._m(0),
+        _vm._v(" "),
         _c(
           "div",
           {
@@ -40051,7 +40053,7 @@ var render = function () {
               "div",
               { staticClass: "buttons" },
               [
-                _vm._m(0),
+                _vm._m(1),
                 _vm._v(" "),
                 _c("router-link", { attrs: { to: "/questionnaire" } }, [
                   _c(
@@ -40081,6 +40083,17 @@ var render = function () {
   )
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "logo-name" } }, [
+      _c("a", { attrs: { href: "/" } }, [
+        _c("h1", [_vm._v("ASIAN WAVE")]),
+        _c("small", [_vm._v("- Твій фестиваль!")]),
+      ]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -40448,12 +40461,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "Header pf" }, [
       _c("div", { staticClass: "container" }, [
-        _c("p", { staticClass: "cyber-glitch-1" }, [
-          _c("span", { staticClass: "cyber-att" }, [
-            _vm._v("Увага! Зафіксовано взлом вашого сердечка!"),
-          ]),
-        ]),
-        _vm._v(" "),
         _c("div", { staticClass: "content" }, [
           _c("div", { staticClass: "tag-list line-accent" }, [
             _c("h1", [_c("span", [_vm._v("HDD:/")])]),

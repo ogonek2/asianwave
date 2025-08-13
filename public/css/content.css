@@ -229,10 +229,10 @@
   padding: 50px 0 0;
 }
 .FormsGroup .container .content .group-items .item {
-  aspect-ratio: 1/0.9;
   position: relative;
   width: 100%;
   max-width: 600px;
+  height: auto;
   border: 1px solid var(--var-color-1);
   padding: 25px 15px;
   cursor: pointer;

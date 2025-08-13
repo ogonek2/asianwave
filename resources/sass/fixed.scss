@@ -12,13 +12,27 @@
     position: relative;
     z-index: 1000;
     padding: 20px 15px;
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         gap: 15px;
-        li{
+
+        li {
             font-size: 24px;
             color: var(--var-color-1);
         }
+    }
+}
+
+#logo-name{
+    font-family: $mon;
+    font-size: 12px;
+    h1{
+        padding: 0;
+        line-height: 32px;
+    }
+    small{
+        color: var(--var-color-3);
     }
 }

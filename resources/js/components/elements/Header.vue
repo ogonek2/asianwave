@@ -1,9 +1,6 @@
 <template>
     <section class="Header pf">
         <div class="container">
-            <p class="cyber-glitch-1">
-                <span class="cyber-att">Увага! Зафіксовано взлом вашого сердечка!</span>
-            </p>
             <div class="content">
                 <div class="tag-list line-accent">
                     <h1>
