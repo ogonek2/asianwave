@@ -152,9 +152,9 @@
 }
 .About .container img {
   width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .About .container {
     padding: 300px 0 0;
     margin-top: 100px;
@@ -170,7 +170,7 @@
     position: absolute;
     z-index: 1;
     top: 50px;
-    left: 50px;
+    right: 50px;
     width: 70%;
     height: 300px;
     max-width: 300px;
@@ -181,13 +181,14 @@
     position: absolute;
     z-index: 2;
     top: -100px;
+    right: 0;
   }
   .About .container img::before {
     content: "";
     position: absolute;
     z-index: 1;
     top: 50px;
-    left: 50px;
+    right: 50px;
     width: 300px;
     height: 300px;
     border-radius: 300px;
@@ -266,9 +267,9 @@
 }
 .FormsGroup .container img {
   width: 100%;
-  max-width: 1600px;
+  max-width: 600px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .FormsGroup .container {
     padding: 240px 0 0;
     margin-top: 20px;
@@ -623,9 +624,9 @@
 }
 .Schedules .container img {
   width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .Schedules .container {
     padding: 300px 0 0;
     margin-top: 100px;

@@ -18,11 +18,14 @@
                     МАГАЗИНИ
                 </li>
                 <li :class="{ active: activeTab === 'schedules' }" @click="activeTab = 'schedules'">
+                    МАЙСТЕР КЛАСИ
+                </li>
+                <!-- <li :class="{ active: activeTab === 'schedules' }" @click="activeTab = 'schedules'">
                     ГРАФІК
                 </li>
                 <li :class="{ active: activeTab === 'lectureschedule' }" @click="activeTab = 'lectureschedule'">
                     ГРАФІК ЛЕКЦІЙ
-                </li>
+                </li> -->
                 <li :class="{ active: activeTab === 'prices' }" @click="activeTab = 'prices'">
                     ЦІНИ
                 </li>

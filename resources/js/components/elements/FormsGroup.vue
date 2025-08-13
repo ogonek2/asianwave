@@ -3,7 +3,7 @@
         <div class="container">
             <div class="content ">
                 <div class="text">
-                    <h1>форми учасників</h1>
+                    <h1>Заявки на участь</h1>
                     <p>
                         Ви можете подати свою заявку на виступ тут:
                     </p>

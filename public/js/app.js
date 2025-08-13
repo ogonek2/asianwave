@@ -5128,6 +5128,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -5620,7 +5623,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'About'
@@ -5792,6 +5794,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.mjs");
 /* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.css");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39602,20 +39618,7 @@ var render = function () {
                 },
               },
             },
-            [_vm._v("\n                ГРАФІК\n            ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              class: { active: _vm.activeTab === "lectureschedule" },
-              on: {
-                click: function ($event) {
-                  _vm.activeTab = "lectureschedule"
-                },
-              },
-            },
-            [_vm._v("\n                ГРАФІК ЛЕКЦІЙ\n            ")]
+            [_vm._v("\n                МАЙСТЕР КЛАСИ\n            ")]
           ),
           _vm._v(" "),
           _c(
@@ -39688,7 +39691,7 @@ var staticRenderFns = [
                       _c("p", [
                         _c("b", [
                           _vm._v(
-                            'VOLUME Club та колонна зала ПК "Росток" (вул. Гарматна, 26/2)'
+                            'VOLUME Club та ПК "Росток" (вул. Гарматна, 26/2)'
                           ),
                         ]),
                       ]),
@@ -40001,89 +40004,101 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "header", attrs: { id: "header" } }, [
-    _c("nav", { staticClass: "navigator", class: { open: _vm.isOpen } }, [
-      _c("div", { staticClass: "burger", on: { click: _vm.toggleMenu } }, [
-        _c("div"),
-        _vm._v(" "),
-        _c("div"),
-        _vm._v(" "),
-        _c("div"),
-      ]),
-      _vm._v(" "),
-      _c("ul", [
+  return _c(
+    "div",
+    {
+      staticClass: "header",
+      staticStyle: { padding: "0.5rem 0" },
+      attrs: { id: "header" },
+    },
+    [
+      _c("nav", { staticClass: "navigator", class: { open: _vm.isOpen } }, [
         _c(
-          "li",
-          [_c("router-link", { attrs: { to: "/" } }, [_vm._v("ГОЛОВНА")])],
-          1
+          "div",
+          {
+            staticClass: "burger",
+            staticStyle: { padding: "0 2rem" },
+            on: { click: _vm.toggleMenu },
+          },
+          [_c("div"), _vm._v(" "), _c("div"), _vm._v(" "), _c("div")]
         ),
         _vm._v(" "),
-        _c(
-          "li",
-          [
-            _c("router-link", { attrs: { to: "/about" } }, [
-              _vm._v("ІНФОРМАЦІЯ"),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          [
-            _c("router-link", { attrs: { to: "/schedule" } }, [
-              _vm._v("РОЗКЛАД"),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          [_c("router-link", { attrs: { to: "/news" } }, [_vm._v("НОВИНИ")])],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          [
-            _c("router-link", { attrs: { to: "/contacts" } }, [
-              _vm._v("КОНТАКТИ ТА ЛОКАЦІЯ"),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("li", [
+        _c("ul", { staticStyle: { width: "100%" } }, [
           _c(
-            "div",
-            { staticClass: "buttons" },
+            "li",
+            [_c("router-link", { attrs: { to: "/" } }, [_vm._v("ГОЛОВНА")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
             [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("router-link", { attrs: { to: "/questionnaire" } }, [
-                _c(
-                  "button",
-                  { staticClass: "cyber-button-small bg-blue fg-white" },
-                  [
-                    _vm._v(
-                      "\n                            Подати заявку\n                            "
-                    ),
-                    _c("span", { staticClass: "glitchtext" }, [
-                      _vm._v("Вперед"),
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "tag fg-white" }, [_vm._v("AW")]),
-                  ]
-                ),
+              _c("router-link", { attrs: { to: "/about" } }, [
+                _vm._v("ІНФОРМАЦІЯ"),
               ]),
             ],
             1
           ),
+          _vm._v(" "),
+          _c(
+            "li",
+            [
+              _c("router-link", { attrs: { to: "/schedule" } }, [
+                _vm._v("РОЗКЛАД"),
+              ]),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            [_c("router-link", { attrs: { to: "/news" } }, [_vm._v("НОВИНИ")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            [
+              _c("router-link", { attrs: { to: "/contacts" } }, [
+                _vm._v("КОНТАКТИ ТА ЛОКАЦІЯ"),
+              ]),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("li", { staticStyle: { "margin-left": "auto" } }, [
+            _c(
+              "div",
+              { staticClass: "buttons" },
+              [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("router-link", { attrs: { to: "/questionnaire" } }, [
+                  _c(
+                    "button",
+                    { staticClass: "cyber-button-small bg-blue fg-white" },
+                    [
+                      _vm._v(
+                        "\n                            Подати заявку\n                            "
+                      ),
+                      _c("span", { staticClass: "glitchtext" }, [
+                        _vm._v("Вперед"),
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "tag fg-white" }, [
+                        _vm._v("AW"),
+                      ]),
+                    ]
+                  ),
+                ]),
+              ],
+              1
+            ),
+          ]),
         ]),
       ]),
-    ]),
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function () {
@@ -40286,7 +40301,7 @@ var staticRenderFns = [
         _c("br"),
         _c("br"),
         _vm._v(
-          "\n\n                    Пропонуємо разом з нами насолодитися насиченою\n                    програмою нашого фестивалю та гарно провести ці весняні\n                    вихідні."
+          "\n\n                    Пропонуємо разом з нами насолодитися насиченою\n                    програмою нашого фестивалю та гарно провести ці теплі осінні дні."
         ),
         _c("br"),
         _c("br"),
@@ -40357,7 +40372,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "content" }, [
             _c("div", { staticClass: "text" }, [
-              _c("h1", [_vm._v("форми учасників")]),
+              _c("h1", [_vm._v("Заявки на участь")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
@@ -40620,237 +40635,31 @@ var staticRenderFns = [
       { staticClass: "Jury pf cyber-razor-top bg-dark fg-white p-3" },
       [
         _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "content swiper-container" }, [
-            _c("div", { staticClass: "text" }, [
+          _c("div", { staticClass: "content" }, [
+            _c("div", { staticClass: "text empty-page" }, [
               _c("h1", { staticClass: "t-t-h" }, [
-                _vm._v("\n                    Журі\n                "),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "swiper-wrapper group-items" }, [
-              _c("div", { staticClass: "item swiper-slide" }, [
-                _c("div", { staticClass: "avatar" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/organizers/photo_2023-11-15_21-05-56.jpg",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "author-info" }, [
-                  _c("small", [_c("b", [_vm._v("Організатор")])]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("Nadia Moon")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "about-tt" }, [
-                    _c("p", [
-                      _vm._v(
-                        "\n                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deserunt saepe eos\n                                dolor\n                                ipsam, ducimus voluptas, corrupti nisi, temporibus dolorum necessitatibus hic\n                                molestias\n                                autem vero incidunt. Laboriosam sapiente error unde.\n                            "
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "sl" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-instagram" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-facebook" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-pinterest" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-twitter" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-linkedin" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-tiktok" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-youtube" }),
-                    ]),
-                  ]),
-                ]),
+                _vm._v(
+                  "\n                    НАЖАЛЬ ІНФОРМАЦІЯ ПОКИ ВІДСУТНЯ\n                "
+                ),
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "item swiper-slide" }, [
-                _c("div", { staticClass: "avatar" }, [
-                  _c("img", {
+              _c("p", [
+                _vm._v("\n                    *Стежте за новинами у нашому "),
+                _c(
+                  "a",
+                  {
                     attrs: {
-                      src: "/storage/source/organizers/photo_2023-11-15_21-05-56.jpg",
-                      alt: "",
+                      href: "https://www.instagram.com/nice_guys_party_kyiv?igsh=OXd4N2l1aTBsNWRt",
+                      target: "_blank",
                     },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "author-info" }, [
-                  _c("small", [_c("b", [_vm._v("Організатор")])]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("Nadia Moon")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "about-tt" }, [
-                    _c("p", [
-                      _vm._v(
-                        "\n                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deserunt saepe eos\n                                dolor\n                                ipsam, ducimus voluptas, corrupti nisi, temporibus dolorum necessitatibus hic\n                                molestias\n                                autem vero incidunt. Laboriosam sapiente error unde.\n                            "
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "sl" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-instagram" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-facebook" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-pinterest" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-twitter" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-linkedin" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-tiktok" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-youtube" }),
-                    ]),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item swiper-slide" }, [
-                _c("div", { staticClass: "avatar" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/organizers/photo_2023-11-15_21-05-56.jpg",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "author-info" }, [
-                  _c("small", [_c("b", [_vm._v("Організатор")])]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("Nadia Moon")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "about-tt" }, [
-                    _c("p", [
-                      _vm._v(
-                        "\n                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deserunt saepe eos\n                                dolor\n                                ipsam, ducimus voluptas, corrupti nisi, temporibus dolorum necessitatibus hic\n                                molestias\n                                autem vero incidunt. Laboriosam sapiente error unde.\n                            "
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "sl" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-instagram" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-facebook" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-pinterest" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-twitter" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-linkedin" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-tiktok" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-youtube" }),
-                    ]),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item swiper-slide" }, [
-                _c("div", { staticClass: "avatar" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/storage/source/organizers/photo_2023-11-15_21-05-56.jpg",
-                      alt: "",
-                    },
-                  }),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "author-info" }, [
-                  _c("small", [_c("b", [_vm._v("Організатор")])]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v("Nadia Moon")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "about-tt" }, [
-                    _c("p", [
-                      _vm._v(
-                        "\n                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deserunt saepe eos\n                                dolor\n                                ipsam, ducimus voluptas, corrupti nisi, temporibus dolorum necessitatibus hic\n                                molestias\n                                autem vero incidunt. Laboriosam sapiente error unde.\n                            "
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "sl" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-instagram" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-facebook" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-pinterest" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-twitter" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-linkedin" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-tiktok" }),
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [
-                      _c("i", { staticClass: "fa-brands fa-youtube" }),
-                    ]),
-                  ]),
-                ]),
+                  },
+                  [_vm._v("інстаграмі")]
+                ),
+                _vm._v(" чи на "),
+                _c("a", { attrs: { href: "news" } }, [_vm._v("сайті")]),
               ]),
             ]),
           ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "swiper-pagination" }),
         ]),
       ]
     )

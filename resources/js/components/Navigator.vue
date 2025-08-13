@@ -1,18 +1,18 @@
 <template>
-    <div id="header" class="header">
+    <div id="header" class="header" style="padding: 0.5rem 0">
         <nav class="navigator" :class="{ open: isOpen }">
-            <div class="burger" @click="toggleMenu">
+            <div class="burger" @click="toggleMenu" style="padding: 0 2rem;">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <ul>
+            <ul style="width: 100%;">
                 <li><router-link to="/">ГОЛОВНА</router-link></li>
                 <li><router-link to="/about">ІНФОРМАЦІЯ</router-link></li>
                 <li><router-link to="/schedule">РОЗКЛАД</router-link></li>
                 <li><router-link to="/news">НОВИНИ</router-link></li>
                 <li><router-link to="/contacts">КОНТАКТИ ТА ЛОКАЦІЯ</router-link></li>
-                <li>
+                <li style="margin-left: auto;">
                     <div class="buttons">
                         <a href="https://ottry.com/events/asian-wave-2025" target="_blank">
                             <button class="cyber-button-small bg-red fg-white">
