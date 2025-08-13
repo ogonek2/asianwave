@@ -24,6 +24,7 @@ Route::prefix('/')->group(function () {
     Route::get('schedule', [Navigator::class, 'index']);
     Route::get('contacts', [Navigator::class, 'index']);
     Route::get('news', [Navigator::class, 'index']);
+    Route::get('news/{slug}', [Navigator::class, 'index']);
     Route::get('questionnaire', [Navigator::class, 'index']);
     Route::get('lecture-schedule', [Navigator::class, 'index']);
 });

@@ -8,6 +8,7 @@ import News from './components/News.vue';
 import Contacts from './components/Contacts.vue'
 import FeedForm from './components/FeedForm.vue'
 import LectureSchedule from './components/LectureSchedule.vue'
+import NewsItem from './components/NewsItem.vue';
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
   { path: '/about', component: About },
   { path: '/schedule', component: Schedule },
   { path: '/news', component: News },
+  {
+    path: '/news/:slug',
+    name: 'news.show',
+    component: NewsItem
+  },
   { path: '/contacts', component: Contacts },
   { path: '/questionnaire', component: FeedForm },
   { path: '/lecture-schedule', component: LectureSchedule },
